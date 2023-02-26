@@ -1,0 +1,365 @@
+/*
+font-family: 'Open Sans', sans-serif; 400, 600, 700
+font-family: 'Poppins', sans-serif; 700 HEADINGS
+*/
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+--LightPink: hsl(321, 100%, 78%);
+--LightRed: hsl(0, 100%, 63%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--VeryPaleBlue: hsl(207, 100%, 98%);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    max-width: 375px;
+}
+   *, *:before, *:after {
+    box-sizing: inherit;
+}
+/*Header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+}
+header img{
+    max-width: 60px;
+    max-height: 15px;
+}
+header button{
+    background-color: white;
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    border-radius: 10px;
+    width: 7rem;
+    height: 2rem;
+}
+/*Main*/
+main{
+    max-width: 300px;
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+button{
+    font-weight: 600;
+}
+    
+.letter h1{
+    font-size: 30px;
+    padding: 0;
+}
+
+.letter p{
+    font-size: 15px;
+    opacity: 0.8;
+}
+.letter button{
+    color: white;
+    background-color: var(--Pink);
+    border: none;
+    width: 175px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 10px;
+    margin: 30px 0 80px 0;
+}
+
+/*px*/
+.px{
+    max-width: 250px;
+}
+
+/*One y Two*/
+.one, .two{
+    max-width: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.one img, .two img{
+    max-width: 30px;
+    margin-top: 3rem;
+}
+
+.one h2, .two h2{
+    font-size: 4rem;
+}
+.one p, .two p{
+    margin-top: -2rem;
+    opacity: 0.6;
+}
+.two p{
+    padding: 0 2rem;
+}
+/*Grow, flow y user*/
+.grow h2, .flow h2, .user h2{
+    font-size: 2rem;
+}
+.grow p, .flow p, .user p{
+    font-size: 1.5rem;
+    margin-bottom: 15rem;
+}
+.letra p{
+    opacity: 0.6;
+}
+
+/*Invert*/
+.invert{
+    display: flex;
+    flex-direction:column-reverse ;
+    background-color: var(--VeryDarkCyan);
+    color: var(--VeryPaleBlue);
+}
+.mobile{
+    display: block;
+}
+.desktop{
+    display: none;
+}
+.white{
+    filter: hue-rotate(60deg) brightness(1000%);
+    padding-bottom: 2rem;
+    width: 60%;
+}
+
+
+
+/*Ask*/
+.ask h1{
+    font-size: 3rem;
+}
+.ask button{
+    background-color: var(--Pink);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+    width: 150px;
+    height: 30px;
+}
+
+/*News*/
+.news{
+    color: var(--VeryPaleBlue);
+    max-width: 250px;
+    padding-left: 30px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+
+/*form*/
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+}
+.formulario button{
+    background-color: var(--Pink);
+    color: white;
+    width: 90px;
+    height: 25px;
+    border: none;
+    border-radius: 0.5rem;
+}
+.formulario input{
+    width: 100%;
+    height: 30px;
+    border-radius: 0.5rem;
+    border: none;
+}
+.formulario{
+    flex: 2;
+    position: relative;
+
+}
+.formulario:focus {
+outline: none;
+border: .1rem solid var(--light-red);
+}
+
+.formulario:focus-within::after {
+content: 'Check your email please';
+position: absolute;
+left: 0;
+bottom: 6rem;
+font-size: 1.2rem;
+font-weight: var(--semi-bold);
+color: var(--light-red);
+}
+/*Background*/
+.background{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--VeryDarkCyan);
+    padding-bottom: 5rem;
+    padding-left: 20px;
+}
+
+/*Huddle*/
+.huddle{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+    font-size: 12px;
+    margin-bottom: 2rem;
+}
+.huddle img{
+    margin-right: 2rem;
+}
+.huddle p{
+    margin: 0 0 0 0;
+}
+
+
+
+/*MQ*/
+@media (min-width: 400px) {
+    header{
+        max-width: 1440px;
+    }
+    header img{
+        max-width: 100px;
+        max-height: 25px;
+    }
+    header button{
+        width: 130px;
+        height: 30px;
+        border-radius: 25px;
+    }
+    html{
+        max-width: 1440px;
+        margin: 0 20rem;
+    }
+
+    main{
+        max-width: 1040px;
+        margin: 0 20rem;
+    }
+    .letter p{
+        margin: 0 25rem;
+    }
+    .letter button{
+        width: 250px;
+        height: 40px;
+        border-radius: 3rem;
+        font-size: 13px;
+    }
+    .px{
+        max-width: 70rem;
+        margin-bottom: 5rem
+    }
+    .plus{
+        display: flex;
+        flex-direction: row;
+    }
+    .grow, .user{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .flow{
+        display: flex;
+        flex-direction: row;
+    }
+    .grow img, .flow img, .user img{
+        max-width: 50%;
+    }
+    .grow .letra, .user .letra{
+        padding-right: 3rem;
+    }
+    .flow .letra{
+        margin-left: 3rem;
+    }
+    .letra{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .letra h2{
+        font-size: 3rem;
+    }
+    .invert{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        padding-top: 5rem;
+    }
+    .white{
+        padding-bottom: 3rem;
+        width: 40%;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+        width: 100%;
+    }
+    .huddle p{
+        padding: 0 20rem 5rem 0;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        max-width: 400px;
+    }
+    .formulario input{
+        width: 25rem;
+        margin-right: 1.5rem;
+    }
+    .ask button{
+        width: 400px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .formulario button{
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+    .phone{
+        margin-bottom: 1rem;
+    }
+    .two p{
+        padding: 0;
+    }
+    .two, .one{
+        margin-bottom: 5rem;
+    }
+}
+
+/*Hover*/
+header button:hover{
+    color: var(--LightPink);
+    border: 2px solid var(--LightPink);
+    cursor: pointer;
+}
+.letter button:hover{
+    background-color: var(--LightPink);
+    cursor: pointer;
+}
+.ask button:hover{
+    background-color: var(--LightPink);
+    cursor: pointer;
+}
+svg:hover{
+    stroke: aqua;
+}
+
+/*Footer*/
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
